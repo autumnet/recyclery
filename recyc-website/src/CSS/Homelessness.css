@@ -1,0 +1,77 @@
+.homelessness{
+    
+    position: relative;
+    min-height: calc(100vh + 10px);
+    text-align: center;
+    color: #767676;
+    background-color: #ffffff;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+}
+
+.header{
+  height: 100vh;
+  position: relative;
+  background-size: cover;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../Images/heroAboutH.jpg');
+  background-attachment: fixed;
+}
+
+.headerContent{
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -60%);
+}
+
+.homelessness .header h1{
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 10vmin;
+}
+.homelessness .header p{
+padding-bottom: 10px;
+font-size: 20px;}
+.about-homelessness-content{
+text-align: left;
+line-height: 1.5rem;
+}
+#aboutHtitle{
+color: #4B9CD3; 
+font-size: 2.25rem;
+padding: 3%;
+}
+.about-homelessness-content h1{
+  font-size: 2.25rem;
+  color: #4B9CD3; 
+padding-top: 2rem;
+line-height: 3rem;
+text-align: center;
+}
+
+.header{
+  color: white;
+}
+#hich, #eh, #hoh{
+padding: 0 5% 5% 5%; 
+}
+.about-homelessness-content p{
+  line-height: 1.66rem;
+}
+#hich h2,#hoh h2, #eh h2{
+  font-size: 1.5rem;
+  color: #13294B;
+  padding:3% 0 3% 0;
+}
+#info{
+  padding-bottom: 6%;
+}
+
+#hich, #eh{
+  background-color: whitesmoke;
+}
+#hich img{
+  width: 100%;
+}
