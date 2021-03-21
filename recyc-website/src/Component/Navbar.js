@@ -10,7 +10,7 @@ function Navbar() {
     function handleButtonClick() {
         toggleOpen(!open);
     };
-
+ 
     return (
         <div className="navbar">
             <div className="navbar-section">
@@ -20,9 +20,10 @@ function Navbar() {
                 <div className="links">
                     <Link id="right-border" className="link" to="/">Home</Link>
                     <Link id="right-border" className="link" to="/about">About Us</Link>
-                    <Link id="right-border" className="link" to="/homelessness">About Homelessness</Link>
-                    <Link id="right-border" className="link" to="/testimonials">Testimonials</Link>
-                    <Link className="link" to="/contact">Contact</Link>
+                    <Link id="right-border" className="link" to="/community">Community</Link>
+                    <Link id="right-border" className="link" to="/support">Support Us</Link>
+                    <Link id="right-border" className="link" to="/blog">Blog</Link>
+                    <Link className="link" to="/programs">Programs</Link>
                     <div className="mobile" onClick={handleButtonClick}>
                         <i className={open ? 'fas fa-times fa-lg' : 'fas fa-bars fa-lg'}></i>
                     </div>
@@ -34,14 +35,17 @@ function Navbar() {
                     <a className="mobile-link" href="/about">
                         About Us
                 </a>
-                    <a className="mobile-link" href="/homelessness">
-                        About Homelessness
+                    <a className="mobile-link" href="/community">
+                        Community
                 </a>
-                    <a className="mobile-link" href="/testimonials">
-                        Testimonials
+                    <a className="mobile-link" href="/support">
+                        Support Us
                 </a>
-                    <a className="mobile-link" href="/contact">
-                        Contact
+                    <a className="mobile-link" href="/blog">
+                        Blog
+                </a>
+                    <a className="mobile-link" href="/programs">
+                        Programs
                 </a>
                 </ul>
 
