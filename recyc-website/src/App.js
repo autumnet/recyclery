@@ -13,6 +13,7 @@ import Principles from './Component/Principles.js';
 import Programs from './Component/Programs.js';
 import Who from './Component/Who.js';
 import Footer from './Component/Footer.js';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
