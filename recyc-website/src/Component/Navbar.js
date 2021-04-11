@@ -13,30 +13,31 @@ function Navigation() {
     // };
  
     return (
-        <Navbar sticky="top" className="navbar" expand="lg" bg="dark">
+        <Navbar sticky="top" className="navbar" expand="lg" className="ml-auto">
             <Navbar.Brand href="/">
                 <img
-                    src="/logo.svg"
+                    src="/recyccirclelogo.png"
                     width="100"
-                    height="100"
+                    height="auto"
                     className="d-inline-block align-top"
                     alt="Recyclery logo"
                 />
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="navlinks">
-                <NavDropdown title="ABOUT US" to="/about">
+            <Nav className="navlinks ml-auto">
+                <NavDropdown title="ABOUT US" to="/about" id="navDropdown">
                     <NavDropdown.Item href="/history" className="main-nav">HISTORY</NavDropdown.Item>
                     <NavDropdown.Item href="/principles" className="main-nav">PRINCIPLES</NavDropdown.Item>
                     <NavDropdown.Item href="/who" className="main-nav">WHO</NavDropdown.Item>
                 </NavDropdown>
-                <NavDropdown title="COMMUNITY" to="/community">
+                <NavDropdown title="COMMUNITY" to="/community" id="navDropdown">
                     <NavDropdown.Item href="/news">NEWS</NavDropdown.Item>
                 </NavDropdown>
-                <Nav.Link href="/support" className="main-nav">SUPPORT US</Nav.Link>
-                <Nav.Link href="/blog" className="main-nav">BLOG</Nav.Link>
-                <Nav.Link href="/programs" className="main-nav">PROGRAMS</Nav.Link>
+                <Nav.Link href="/support" className="main-nav"><span className="navLink">SUPPORT US</span></Nav.Link>
+                <Nav.Link href="/blog" className="main-nav"><span className="navLink">BLOG</span></Nav.Link>
+                <Nav.Link href="/programs" className="main-nav"><span className="navLink">PROGRAMS</span></Nav.Link>
+                <Button variant="outline-light" id="navbutton" href="/">SCHEDULE AN APPOINTMENT</Button>
             </Nav>
         </Navbar.Collapse>
     </Navbar>

@@ -1,5 +1,6 @@
 .footer {
-    background-color: var(--secondary-color);
+    background-color: black;
+    color: white;
     display: flex;
     justify-content: space-around;
     align-items: center;

@@ -13,6 +13,36 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 } 
 
+.navbar,
+.navbar-default {
+    background-color: black; /* override background image gradient w/ flat color */
+    color: white;
+}
+
+.navLink{
+    color: white;
+    padding: 0px 15px;
+}
+
+#navDropdown {
+    color:white;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+#navbutton {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+  }
+  /* .navbar-brand>img {
+    padding: 7px 14px;
+  } */
+
 .navlinks {
     float: left;
     font-size: 16px;
@@ -20,14 +50,6 @@
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-  }
-
-  .main-nav {
-    color:pink;
-  }
-
-  .main-nav:hover {
-      color:tomato;
   }
 
 .navbar-section {
