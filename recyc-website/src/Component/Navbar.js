@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import '../CSS/Navbar.css';
-import { Link, NavLink } from 'react-router-dom';
+import { Link, NavLink, withRouter } from 'react-router-dom';
 import Logo from '../Images/Logo.svg';
-import { Button, Navbar, NavDropdown, Nav, Form, FormControl } from 'react-bootstrap'
+import { Button, Navbar, NavDropdown, Nav, Form, FormControl, Card } from 'react-bootstrap'
 
 function Navigation() {
 
@@ -29,7 +29,7 @@ function Navigation() {
                 <NavDropdown title="ABOUT US" to="/about" id="navDropdown">
                     <NavDropdown.Item href="/history" className="main-nav">HISTORY</NavDropdown.Item>
                     <NavDropdown.Item href="/principles" className="main-nav">PRINCIPLES</NavDropdown.Item>
-                    <NavDropdown.Item href="/who" className="main-nav">WHO</NavDropdown.Item>
+                    <NavDropdown.Item href="/who" className="main-nav">WHO WE ARE</NavDropdown.Item>
                 </NavDropdown>
                 <NavDropdown title="COMMUNITY" to="/community" id="navDropdown">
                     <NavDropdown.Item href="/news">NEWS</NavDropdown.Item>
@@ -37,7 +37,7 @@ function Navigation() {
                 <Nav.Link href="/support" className="main-nav"><span className="navLink">SUPPORT US</span></Nav.Link>
                 <Nav.Link href="/blog" className="main-nav"><span className="navLink">BLOG</span></Nav.Link>
                 <Nav.Link href="/programs" className="main-nav"><span className="navLink">PROGRAMS</span></Nav.Link>
-                <Button variant="outline-light" id="navbutton" href="/">SCHEDULE AN APPOINTMENT</Button>
+                <Button variant="outline-light" id="navbutton" href="/">SERVICE REQUEST</Button>
             </Nav>
         </Navbar.Collapse>
     </Navbar>
@@ -97,5 +97,5 @@ function Navigation() {
 //     )
 // }
 
-export default Navigation;
+export default withRouter(Navigation);
 

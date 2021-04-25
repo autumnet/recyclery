@@ -1,0 +1,52 @@
+.accordion {
+    transition: background-color .8s ease,color .2s;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none; 
+    width: 100%;
+    z-index: 999;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    background-color: black;
+    padding-left: 100px;
+    padding-right: 100px;
+} 
+
+#cardBody {
+    background-color:black;
+    /* padding-left: 30px;
+    padding-right: 30px; */
+    font-weight: bold;
+    font-size: 50;
+}
+
+#cardBody {
+    /* border-bottom-color: white;
+    border-top-color: white; */
+}
+
+.inner {
+    font-weight: lighter;
+    font-size: 40;
+}
+
+.title {
+    background-color: black;
+    color: white;
+    font-weight: 900;
+    font-size: 60px;
+    padding-top: -30px;
+}
+
+#profile {
+    background-color: black;
+}
+
+/* .cardHead {
+
+} */
+
+.card {
+    padding-left: 0px;
+    padding-right: 0px;
+}
