@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
 import '../CSS/Navbar.css';
 import { Link, NavLink, withRouter } from 'react-router-dom';
-import Logo from '../Images/Logo.svg';
-import { Button, Navbar, NavDropdown, Nav, Form, FormControl, Card } from 'react-bootstrap'
+import { Button, Navbar, NavDropdown, Nav} from 'react-bootstrap'
 
 function Navigation() {
 
@@ -27,17 +26,22 @@ function Navigation() {
             <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="navlinks ml-auto">
                 <NavDropdown title="ABOUT US" to="/about" id="navDropdown">
-                    <NavDropdown.Item href="/history" className="main-nav">HISTORY</NavDropdown.Item>
-                    <NavDropdown.Item href="/principles" className="main-nav">PRINCIPLES</NavDropdown.Item>
-                    <NavDropdown.Item href="/who" className="main-nav">WHO WE ARE</NavDropdown.Item>
+                    <NavDropdown.Item href="/history" className="main-nav dropdown-link">HISTORY</NavDropdown.Item>
+                    <NavDropdown.Item href="/principles" className="main-nav dropdown-link">PRINCIPLES</NavDropdown.Item>
+                    <NavDropdown.Item href="/who" className="main-nav dropdown-link">WHO WE ARE</NavDropdown.Item>
                 </NavDropdown>
                 <NavDropdown title="COMMUNITY" to="/community" id="navDropdown">
-                    <NavDropdown.Item href="/news">NEWS</NavDropdown.Item>
+                    <NavDropdown.Item href="/news" className="main-nav dropdown-link">NEWS</NavDropdown.Item>
                 </NavDropdown>
                 <Nav.Link href="/support" className="main-nav"><span className="navLink">SUPPORT US</span></Nav.Link>
                 <Nav.Link href="/blog" className="main-nav"><span className="navLink">BLOG</span></Nav.Link>
-                <Nav.Link href="/programs" className="main-nav"><span className="navLink">PROGRAMS</span></Nav.Link>
-                <Button variant="outline-light" id="navbutton" href="/">SERVICE REQUEST</Button>
+                <NavDropdown title="PROGRAMS" to="/about" id="navDropdown">
+                    <NavDropdown.Item href="/wtf" className="main-nav dropdown-link">WTF</NavDropdown.Item>
+                    <NavDropdown.Item href="/mechanic" className="main-nav dropdown-link">MECHANIC CLASSES</NavDropdown.Item>
+                    <NavDropdown.Item href="/rides" className="main-nav dropdown-link">RIDES</NavDropdown.Item>
+                    <NavDropdown.Item href="/run" className="main-nav dropdown-link">RUN STUFF</NavDropdown.Item>
+                </NavDropdown>                
+                <Button variant="outline-light" id="navbutton" href="https://docs.google.com/forms/d/e/1FAIpQLSeAU4vdU0F47gsuV67wAj2_zNmma2HJPebnBcDnjPFRGMGqGQ/viewform">SERVICE REQUEST</Button>
             </Nav>
         </Navbar.Collapse>
     </Navbar>

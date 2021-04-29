@@ -1,8 +1,6 @@
 import React from 'react';
 import '../CSS/Principles.css';
-import { Link, NavLink } from 'react-router-dom';
-import { Button, Navbar, NavDropdown, Nav, Form, FormControl, Container, Row, Col, Image } from 'react-bootstrap'
-import Accordion from 'react-bootstrap/Accordion'
+import { Container, Row, Col, Image } from 'react-bootstrap'
 import Card from 'react-bootstrap/Card'
 
 function Principles() {

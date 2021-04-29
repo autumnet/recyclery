@@ -3,9 +3,11 @@ import './App.css';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Navbar from './Component/Navbar.js';
 import Home from './Component/Home.js';
-import About from './Component/About.js';
+import Wtf from './Component/Wtf.js';
 import Blog from './Component/Blog.js'; 
-import Community from './Component/Community.js';
+import Mechanic from './Component/Mechanic.js';
+import Rides from './Component/Rides.js';
+import Run from './Component/Run.js';
 import Support from './Component/Support.js';
 import History from './Component/History.js';
 import News from './Component/News.js';
@@ -23,14 +25,16 @@ function App() {
 
       <Switch>
         <Route exact path="/" component={Home} />
-        <Route path="/About" component={About} />
         <Route path="/Principles" component={Principles} />
         <Route path="/Who" component={Who} />
         <Route path="/History" component={History} />
-        <Route path="/Community" component={Community} />
         <Route path="/News" component={News} />
         <Route path="/Blog" component={Blog} />
         <Route path="/Programs" component={Programs} />
+        <Route path="/WTF" component={Wtf} />
+        <Route path="/Mechanic" component={Mechanic} />
+        <Route path="/Rides" component={Rides} />
+        <Route path="/Run" component={Run} />
         <Route path="/Support" component={Support} />
       </Switch>
 

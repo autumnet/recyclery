@@ -20,11 +20,6 @@
     font-size: 50;
 }
 
-#cardBody {
-    /* border-bottom-color: white;
-    border-top-color: white; */
-}
-
 .inner {
     font-weight: lighter;
     font-size: 40;
@@ -35,7 +30,7 @@
     color: white;
     font-weight: 900;
     font-size: 60px;
-    padding-top: -30px;
+    /* padding: .25rem !important; */
 }
 
 #profile {

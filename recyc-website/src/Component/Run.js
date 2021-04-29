@@ -1,16 +1,16 @@
 import React from 'react';
 //import ReactDOM from 'react-dom';
-import '../CSS/Community.css';
+import '../CSS/Run.css';
 //import Carousel from 'react-bootstrap/Carousel'
 
-function Community() {
+function Run() {
 
     return (
         <div>
-          <p>History page test</p>
+          <p>Run stuff page test</p>
         </div>
       ); 
         
 }
 
-export default Community;
+export default Run;
