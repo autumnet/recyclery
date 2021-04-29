@@ -5,17 +5,17 @@ import { Button, Navbar, NavDropdown, Nav} from 'react-bootstrap'
 
 function Navigation() {
 
-    // const [open, toggleOpen] = useState(false);
+    const [open, toggleOpen] = useState(false);
 
-    // function handleButtonClick() {
-    //     toggleOpen(!open);
-    // };
+    function handleButtonClick() {
+        toggleOpen(!open);
+    };
  
     return (
         <Navbar sticky="top" className="navbar" expand="lg" className="ml-auto">
             <Navbar.Brand href="/">
                 <img
-                    src="/recyccirclelogo.png"
+                    src="/recyclogotransparent.png"
                     width="100"
                     height="auto"
                     className="d-inline-block align-top"
@@ -42,6 +42,26 @@ function Navigation() {
                     <NavDropdown.Item href="/run" className="main-nav dropdown-link">RUN STUFF</NavDropdown.Item>
                 </NavDropdown>                
                 <Button variant="outline-light" id="navbutton" href="https://docs.google.com/forms/d/e/1FAIpQLSeAU4vdU0F47gsuV67wAj2_zNmma2HJPebnBcDnjPFRGMGqGQ/viewform">SERVICE REQUEST</Button>
+                <div className="mobile" onClick={handleButtonClick}>
+                        <i className={open ? 'fas fa-times fa-lg' : 'fas fa-bars fa-lg'}></i>
+                </div>
+                <ul className={open ? 'nav-menu active' : 'nav-menu'}>
+                    <a className="mobile-link" href="/">
+                        Home
+                </a>
+                    <a className="mobile-link" href="/">
+                        About Us
+                </a>
+                    <a className="mobile-link" href="/">
+                        About Homelessness
+                </a>
+                    <a className="mobile-link" href="/">
+                        Testimonials
+                </a>
+                    <a className="mobile-link" href="/">
+                        Contact
+                </a>
+                </ul>
             </Nav>
         </Navbar.Collapse>
     </Navbar>
