@@ -31,6 +31,7 @@ function Navigation() {
                     <NavDropdown.Item href="/who" className="main-nav dropdown-link">WHO WE ARE</NavDropdown.Item>
                 </NavDropdown>
                 <NavDropdown title="COMMUNITY" to="/community" id="navDropdown">
+                    <NavDropdown.Item href="/bikeportraits" className="main-nav dropdown-link">BIKE PORTRAITS</NavDropdown.Item>
                     <NavDropdown.Item href="/news" className="main-nav dropdown-link">NEWS</NavDropdown.Item>
                 </NavDropdown>
                 <Nav.Link href="/support" className="main-nav"><span className="navLink">SUPPORT US</span></Nav.Link>

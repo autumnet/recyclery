@@ -11,6 +11,7 @@ import Run from './Component/Run.js';
 import Support from './Component/Support.js';
 import History from './Component/History.js';
 import News from './Component/News.js';
+import Portraits from './Component/Portraits.js';
 import Principles from './Component/Principles.js';
 import Programs from './Component/Programs.js';
 import Who from './Component/Who.js';
@@ -29,6 +30,7 @@ function App() {
         <Route path="/Who" component={Who} />
         <Route path="/History" component={History} />
         <Route path="/News" component={News} />
+        <Route path="/BikePortraits" component={Portraits} />
         <Route path="/Blog" component={Blog} />
         <Route path="/Programs" component={Programs} />
         <Route path="/WTF" component={Wtf} />
